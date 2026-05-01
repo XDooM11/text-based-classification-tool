@@ -1,92 +1,58 @@
-# Tect based classification tool
+# Text based classification tool
 
-Simple Python tool for scanning and classifying files based on their content.
-Originally designed for organizing university data (faculties, dormitories, services), but can be adapted to other use cases.
+A small Python script for scanning files in a folder and sorting them based on their content.
 
----
-
-## Overview
-
-The script goes through all files in a selected directory, extracts text where possible, and assigns each file to a category based on predefined keywords. It also generates a PDF report with a summary of the dataset.
-
----
+It was originally created for organizing university-related files (faculties, dormitories, services), but the idea can be reused for other types of data.
 
 ## What it does
 
-* scans directories recursively
-* reads content from PDF and DOCX files
-* normalizes text (removes diacritics)
-* matches keywords using regular expressions
-* assigns files to categories (e.g. faculties, dormitories, services)
-* lists files that could not be classified
-* generates a structured PDF report
+The script goes through all files in a selected directory, tries to read their content, and looks for keywords.
+If a match is found, the file is assigned to a category. If not, it is listed as unmatched.
 
----
+It also creates a simple PDF report with an overview of the dataset.
 
-## How to run
+## Supported files
 
-```bash
+* PDF (text extraction)
+* DOCX
+* other formats are detected but not fully processed
+
+## Running the script
+
+```bash id="r8d3ka"
 python main.py
 ```
 
-You will be asked to enter the path to the folder you want to analyze.
-
----
+After running, you will be asked to enter the path to the folder you want to analyze.
 
 ## Requirements
 
-Install required packages:
+Install dependencies with:
 
-```bash
+```bash id="g2k7po"
 pip install pandas pdfplumber python-docx fpdf unidecode
 ```
 
----
-
 ## Output
 
-The script creates a PDF report containing:
+The script generates a PDF report that includes:
 
 * total number of files
-* total data size
-* list of classified files (including matched keywords)
-* list of unmatched files
-
----
+* total size of the dataset
+* list of classified files (with matched keywords)
+* list of files that were not classified
 
 ## Configuration
 
-Classification is based on a dictionary of keywords:
-
-```python
-self.fakulty_data = {
-    "Lekarska fakulta": r"...",
-    "Koleje a menzy": r"...",
-    ...
-}
-```
-
-You can edit or extend this dictionary to fit your own data.
-
----
+Categories are defined in a dictionary inside the script.
+You can adjust the keywords or add your own depending on your data.
 
 ## Notes
 
-* classification is based on simple keyword matching
-* results depend on how well the patterns are defined
-* not all file types are fully supported
-
----
-
-## Possible improvements
-
-* better handling of Excel files
-* more advanced text analysis
-* exporting results to other formats
-* adding a user interface
-
----
+The classification is based on simple keyword matching, so the results depend on how well the patterns are defined.
+Some file types are only partially supported.
 
 ## License
 
-MIT License
+MIT
+
