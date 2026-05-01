@@ -1,8 +1,8 @@
-# Text based classification tool
+## Text based classification tool
 
-A small Python script for scanning files in a folder and sorting them based on their content.
+A Python script for scanning files in a folder and classifying them based on their content.
 
-It was originally created for organizing university-related files (faculties, dormitories, services), but the idea can be reused for other types of data.
+Originally developed for organizing university-related files (faculties, dormitories, services), the tool can be adapted for other datasets as well.
 
 ## What it does
 
@@ -42,10 +42,10 @@ pip install pandas pdfplumber python-docx fpdf2 unidecode
 
 The script generates a PDF report that includes:
 
-* total number of files
-* total size of the dataset
-* list of classified files (with matched keywords)
-* list of files that were not classified
+- total number of files
+- total size of the dataset
+- list of classified files (with matched keywords)
+- list of unclassified files
 
 ## Configuration
 
