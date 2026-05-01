@@ -1,4 +1,4 @@
-## Text based classification tool
+# Text based classification tool
 
 A Python script for scanning files in a folder and classifying them based on their content.
 
