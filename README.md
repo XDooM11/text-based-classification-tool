@@ -13,9 +13,8 @@ It also creates a simple PDF report with an overview of the dataset.
 
 ## Supported files
 
-* PDF (text extraction)
-* DOCX
-* other formats are detected but not fully processed
+The script works best with PDF and DOCX files, where it can extract text content.  
+Other file types (such as Excel) are still included in the scan, but their content is not analyzed.
 
 ## Running the script
 
