@@ -42,10 +42,10 @@ pip install pandas pdfplumber python-docx fpdf2 unidecode
 
 The script generates a PDF report that includes:
 
-- total number of files
-- total size of the dataset
-- list of classified files (with matched keywords)
-- list of unclassified files
+* total number of files
+* total size of the dataset
+* list of classified files (with matched keywords)
+* list of unclassified files
 
 ## Configuration
 
