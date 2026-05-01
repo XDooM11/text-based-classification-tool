@@ -28,8 +28,14 @@ After running, you will be asked to enter the path to the folder you want to ana
 
 Install dependencies with:
 
-```bash id="g2k7po"
-pip install pandas pdfplumber python-docx fpdf unidecode
+```bash
+pip install -r requirements.txt
+```
+
+Alternatively, you can install them manually:
+
+```bash
+pip install pandas pdfplumber python-docx fpdf2 unidecode
 ```
 
 ## Output
