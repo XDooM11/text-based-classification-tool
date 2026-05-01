@@ -1,7 +1,4 @@
-# text-based-classification-tool
-Tool for analyzing and classifying files based on content using keyword matching
-
-# Academic File Classifier
+# Tect based classification tool
 
 Simple Python tool for scanning and classifying files based on their content.
 Originally designed for organizing university data (faculties, dormitories, services), but can be adapted to other use cases.
