@@ -54,8 +54,7 @@ You can adjust the keywords or add your own depending on your data.
 
 ## Notes
 
-The classification is based on simple keyword matching, so the results depend on how well the patterns are defined.
-Some file types are only partially supported.
+The classification is based on simple keyword matching, so the results depend on how well the patterns are defined. Text content is extracted only from PDF and DOCX files, while other file types are included in the analysis but their content is not processed.
 
 ## License
 
